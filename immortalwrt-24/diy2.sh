@@ -9,8 +9,6 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
-# 去掉 gn 包的 -Werror
-find feeds/packages/devel/gn -type f -exec sed -i 's/-Werror//g' {} +
 # 修改默认IP地址
 sed -i "s/192.168.1.1/172.18.18.222/g" package/base-files/files/bin/config_generate
 # 修改设备说明
